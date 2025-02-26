@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+        }
+        header h1 {
+            font-size: 24px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            padding: 50px;
+            background: #007BFF;
+            color: white;
+        }
+        .hero h2 {
+            font-size: 36px;
+        }
+        .hero p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .hero .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: white;
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+        .features, .about, .contact {
+            padding: 40px;
+        }
+        .feature-box {
+            display: inline-block;
+            width: 30%;
+            margin: 10px;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        form input, form textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        button {
+            background: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Brand</h1>
+        <nav>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Welcome to Our Website</h2>
+        <p>Delivering the best solutions for your needs</p>
+        <a href="#contact" class="btn">Get Started</a>
+    </section>
+
+    <section id="features" class="features">
+        <h2>Features</h2>
+        <div class="feature-box">
+            <h3>Fast & Reliable</h3>
+            <p>Our services are optimized for speed and efficiency.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Secure & Trusted</h3>
+            <p>We prioritize security and user privacy.</p>
+        </div>
+        <div class="feature-box">
+            <h3>24/7 Support</h3>
+            <p>Our team is available round the clock to assist you.</p>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We are a team dedicated to providing high-quality digital solutions.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required><br>
+            <input type="email" placeholder="Your Email" required><br>
+            <textarea placeholder="Your Message" required></textarea><br>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Brand. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
